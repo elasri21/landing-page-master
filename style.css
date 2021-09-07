@@ -28,7 +28,7 @@ a {
 h1,
 h2,
 h3,
-h4 {
+.title {
   font-family: "DM Serif Display", sans-serif;
   font-weight: 700;
 }
@@ -449,7 +449,7 @@ footer {
   }
 }
 
-h4 {
+.title {
   font-size: 14px;
   font-weight: 700;
   color: hsl(273, 4%, 51%);
@@ -470,11 +470,11 @@ h4 {
   text-decoration: underline;
 }
 @media screen and (max-width: 375px) {
-  h4 {
+  .title {
     margin-bottom: 15px;
     margin-top: 15px;
   }
-  h4,
+  .title,
   .links-category ul,
   .links-categoryli {
     text-align: center;
