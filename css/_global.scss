@@ -1,0 +1,28 @@
+/*globalrules*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: $body-family;
+}
+/*global rules*/
+@include heading {
+    font-family: $heading-family;
+    color: $heading-color;
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+    color: $text-color;
+    font-weight: 400;
+}
+section {
+    padding: 20px 40px;
+}
+a {
+    transition:  all .3s ease-in-out;
+}

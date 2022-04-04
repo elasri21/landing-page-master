@@ -1,0 +1,31 @@
+//primary colors
+$dark-violet: hsl(256, 26%, 20%);
+$section-bg: $dark-violet;
+$grayish-blue: hsl(216, 30%, 68%);
+$icon-bg: $grayish-blue;
+
+//neutral colors
+$vdv: hsl(270, 9%, 17%);
+$heading-color: $vdv;
+$dgv: hsl(273, 4%, 51%);
+$text-color: $dgv;
+$vlg: hsl(0, 0%, 98%);
+$footer-bg: $vlg;
+
+// topography
+$body-size: 16px;
+// heading family
+$heading-family: "DM Serif Display", sans-serif;
+// body family
+$body-family: "Karla", sans-serif;
+// breakpoint
+$small-screen: '(min-width: 768px)';
+$mobile: '(max-width: 767px)';
+//mixin
+@mixin heading {
+    @for $i from 1 through 6 {
+        h#{$i} {
+            @content;
+        }
+    }
+}

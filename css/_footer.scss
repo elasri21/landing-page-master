@@ -1,0 +1,84 @@
+footer {
+    background-color: $footer-bg;
+    margin: 50px 40px 0 40px;
+    padding: 30px 0;
+    background-repeat: no-repeat;
+    .logo-social {
+        margin-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $text-color;
+
+        .social {
+            margin-top: 20px;
+            a {
+                color: $text-color;
+                &:not(:last-of-type) {
+                    margin-right: 10px;
+                }
+                &:hover {
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+    .links-category {
+        margin-left: 15px;
+        padding-right: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .category {
+            p {
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    &:not(:last-of-type) {
+                        margin-bottom: 15px;
+                    }
+                    a {
+                        color: $heading-color;
+                        display: block;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media #{$mobile} {
+        background-image: url("../images/bg-pattern-footer-mobile.svg");
+        background-size: 100% 100px;
+        text-align: center;
+    }
+    @media #{$small-screen} {
+        background-image: url("../images/bg-pattern-footer-desktop.svg");
+        background-size: 35% 50%;
+        background-position: top left;
+        .logo-social {
+            display: flex;
+            justify-content: space-between;
+            .social {
+                margin-top: 0;
+            }
+        }
+        .links-category {
+            display: flex;
+            justify-content: space-between;
+            .category {
+                width: 23%;
+                
+            }
+        }
+
+    }
+}
+
+.attribution {
+    font-size: 11px;
+     text-align: center;
+     a {
+        color: hsl(228, 45%, 44%);
+     }
+}

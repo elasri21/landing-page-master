@@ -1,0 +1,41 @@
+button {
+    /*global rules for all buttons*/
+    border: none;
+    outline: none;
+    background: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 8px 15px;
+    /*global rules for all buttons*/
+    
+    &.see-plan {
+        @media #{$mobile} {
+            /*start rules for sess-plan  button in humanizing section*/
+            border: 2px solid $vlg;
+            color: $vlg;
+            width: 100%;
+
+        }
+        @media #{$small-screen}{
+            border: 2px solid $heading-color;
+            &:hover {
+                background-color: $heading-color;
+                color: $vlg;
+            }
+            /*end rules for sess-plan  button in humanizing section*/
+        }
+    }
+    &.explore {
+        /*start rules for explore button in how section*/
+        border: 2px solid $vlg;
+        color: $vlg;
+        &:hover {
+            background-color: $vlg;
+            color: $heading-color;
+        }
+        /* end of rules for explore button in how section*/
+    }
+}
